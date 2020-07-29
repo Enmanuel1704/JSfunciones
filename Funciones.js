@@ -1,5 +1,5 @@
 function Con_A_Decimal(decimal,base){
-    //Esta funcion cualquier numero a decimal 
+    //Esta funcion combierte cualquier numero en otra base a decimal 
     // ejemplo1: un binario es base 2  Con_A_Decimal(100110,2)
     // ejemplo2: un hexadecimal es base 16  Con_A_Decimal('F4A9',16)
     var str = (''+decimal);
@@ -12,6 +12,7 @@ function Con_A_Decimal(decimal,base){
         }
         res += Math.pow(base,x)*parseInt(aux);
     }
+<<<<<<< HEAD
     console.log(res);
     return res;
 }
@@ -135,3 +136,7 @@ function consultarYO(){
 }
 
 }
+=======
+    console.log(res)
+}
+>>>>>>> 9d36a0aa2d8ab5b07c238475c416be4b167fd9d7
