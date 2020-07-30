@@ -12,7 +12,7 @@ function Con_A_Decimal(decimal,base){
         }
         res += Math.pow(base,x)*parseInt(aux);
     }
-<<<<<<< HEAD
+
     console.log(res);
     return res;
 }
@@ -136,7 +136,5 @@ function consultarYO(){
 }
 
 }
-=======
     console.log(res)
 }
->>>>>>> 9d36a0aa2d8ab5b07c238475c416be4b167fd9d7
