@@ -17,7 +17,14 @@ function Con_A_Decimal(decimal,base){
     return res;
 }
 
-
+function FuerzaEmpuje(Volumen, Densidad){
+//la fuerza de empuje es la fuerza que se hacia arriba E=pesoLiquidoDesalojado
+const gravedad=9.82;
+return (gravedad*Volumen*Densidad);
+}
+function densidadGases(MasaMolarGas,PresionGas,RconstanteGas,TemperaturaGas){
+return ((MasaMolarGas*PresionGas)/(RconstanteGas*TemperaturaGas));
+}
 
 function consultarYO(){
 
