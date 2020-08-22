@@ -17,13 +17,17 @@ function Con_A_Decimal(decimal,base){
     return res;
 }
 
-function FuerzaEmpuje(Volumen, Densidad){
-//la fuerza de empuje es la fuerza que se hacia arriba E=pesoLiquidoDesalojado
-const gravedad=9.82;
-return (gravedad*Volumen*Densidad);
+
+function densidadGases(TemperaturaGas,MasaMolarGas,PresionGas=101325,RconstanteGas=8.31451){
+    //masaMolar en kg/mol, Temperatura en celsius, presion en Pa, R en J/K(mol)
+    //formula para encontrar la densidad de un gas 
+    temperatura = TemperaturaGas+273.15;
+    return ((MasaMolarGas*PresionGas)/(RconstanteGas*tmperatura));
 }
-function densidadGases(MasaMolarGas,PresionGas,RconstanteGas,TemperaturaGas){
-return ((MasaMolarGas*PresionGas)/(RconstanteGas*TemperaturaGas));
+function FuerzaEmpuje(Volumen, Densidad){
+    //la fuerza de empuje es la fuerza que se hacia arriba E=pesoLiquidoDesalojado
+    const gravedad=9.8;
+    return (gravedad*Volumen*Densidad);
 }
 
 function consultarYO(){
