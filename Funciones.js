@@ -15,7 +15,7 @@ function Con_A_Decimal(decimal,base){
 
     console.log(res);
     return res;
-}
+} 
 
 
 function densidadGases(TemperaturaGas,MasaMolarGas=0.0289635,PresionGas=101325,RconstanteGas=8.31451){
